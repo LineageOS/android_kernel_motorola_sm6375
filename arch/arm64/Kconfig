@@ -1985,6 +1985,12 @@ config CAM_SENSOR_PROBE_RETRY
         help
         Add retries for sensor id matching
 
+config CAMERA_CCI_MASTER_CHANGE
+	bool "For cam cci master chance"
+	default y
+	help
+	Enable it to switch cci master i2c address.
+
 config CAMERA_CCI_ADDR_SWITCH
 	bool "For cam switch i2c address"
 	default n
