@@ -1357,7 +1357,7 @@ static void mmi_discrete_charger_work(struct work_struct *work)
 
 	mmi_discrete_config_chgmod_to_fg(chip);
 
-	mmi_info(chip, "FV=%d, FCC=%d, CHGDIS=%d, USBICL=%d, USBDIS=%d\n",
+	mmi_dbg(chip, "FV=%d, FCC=%d, CHGDIS=%d, USBICL=%d, USBDIS=%d\n",
 		get_effective_result(chip->fv_votable),
 		get_effective_result(chip->fcc_votable),
 		get_effective_result(chip->chg_disable_votable),
