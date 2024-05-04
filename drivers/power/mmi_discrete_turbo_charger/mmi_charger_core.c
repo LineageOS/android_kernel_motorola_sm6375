@@ -1107,7 +1107,7 @@ static void mmi_heartbeat_work(struct work_struct *work)
 	int hb_resch_time = 0, ret = 0;
 	union power_supply_propval val;
 
-	mmi_chrg_info(chip, "MMI: Heartbeat!\n");
+	// mmi_chrg_info(chip, "MMI: Heartbeat!\n");
 	/* Have not been resumed so wait another 100 ms */
 	if (chip->suspended) {
 		mmi_chrg_err(chip, "SMBMMI: HB running before Resume\n");
