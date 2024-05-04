@@ -1459,7 +1459,7 @@ static void mmi_get_charger_info(struct mmi_charger_chip *chip,
 	mmi_get_cur_thermal_level(chip, &thermal_level);
 	charger->driver->get_batt_info(charger->driver->data, batt_info);
 	charger->driver->get_chg_info(charger->driver->data, chg_info);
-	mmi_info(chip, "[C:%s]: batt_mv %d, batt_ma %d, batt_soc %d,"
+	mmi_dbg(chip, "[C:%s]: batt_mv %d, batt_ma %d, batt_soc %d,"
 		" batt_temp %d, batt_status %d, batt_sn %s, batt_fv_mv %d,"
 		" batt_fcc_ma %d\n",
 		charger->driver->name,
@@ -1471,7 +1471,7 @@ static void mmi_get_charger_info(struct mmi_charger_chip *chip,
 		batt_info->batt_sn,
 		batt_info->batt_fv_mv,
 		batt_info->batt_fcc_ma);
-	mmi_info(chip, "[C:%s]: chrg_present %d, chrg_type %d, chrg_pmax_mw %d,"
+	mmi_dbg(chip, "[C:%s]: chrg_present %d, chrg_type %d, chrg_pmax_mw %d,"
 		" chrg_mv %d, chrg_ma %d, chrg_otg_enabled %d, thermal_level %d\n",
 		charger->driver->name,
 		chg_info->chrg_present,
@@ -1624,7 +1624,7 @@ static void mmi_update_charger_status(struct mmi_charger_chip *chip,
 
 	charger->battery->pending++;
 
-	mmi_info(chip, "[C:%s]: StepChg: %s, TempZone: %d, LimitMode: %d, DemoSuspend: %d\n",
+	mmi_dbg(chip, "[C:%s]: StepChg: %s, TempZone: %d, LimitMode: %d, DemoSuspend: %d\n",
 		charger->driver->name,
 		stepchg_str[(int)status->pres_chrg_step],
 		status->pres_temp_zone,
@@ -1739,7 +1739,7 @@ static void mmi_configure_charger(struct mmi_charger_chip *chip,
 	charger->driver->set_constraint(charger->driver->data, &charger->constraint);
 	charger->driver->config_charge(charger->driver->data, cfg);
 
-	mmi_info(chip, "[C:%s]: FV=%d, FCC=%d, CDIS=%d,"
+	mmi_dbg(chip, "[C:%s]: FV=%d, FCC=%d, CDIS=%d,"
 		" CSUS=%d, CRES=%d, CFULL=%d\n",
 		charger->driver->name,
 		cfg->target_fv,
