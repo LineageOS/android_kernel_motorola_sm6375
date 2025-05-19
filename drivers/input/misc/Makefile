@@ -95,3 +95,4 @@ obj-$(CONFIG_INPUT_GOODIX_FOD_MMI)	+= goodix_fod_mmi/
 obj-$(CONFIG_INPUT_RBS_FOD_MMI)		+= rbs_fod_mmi/
 obj-$(CONFIG_INPUT_EGIS_FPS_MMI)	+= rbs_fps_mmi/
 obj-$(CONFIG_INPUT_SILEAD_FPS_MMI)	+= silead_fps_mmi/
+obj-$(CONFIG_INPUT_ETS_BIX_MMI)	+= ets_bix_mmi/

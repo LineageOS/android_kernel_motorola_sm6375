@@ -21,3 +21,12 @@ config MMI_SGM41513_CHARGER
 	  Say Y here if you have a SGM4154X Moto SGM41513 Charger compatible device connected.
 
 	  If unsure, say N.
+
+config MMI_EXT_CHG_LED
+	bool "Enable LED Charger support"
+	depends on SGM4154X_CHARGER
+	default n
+	help
+	  Say Y here if you have a SGM4154X Moto Charger compatible device with LED support connected.
+
+	  If unsure, say N.

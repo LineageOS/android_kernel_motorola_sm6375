@@ -2,11 +2,11 @@
 # Focaltech Touchscreen driver configuration
 #
 
-config TOUCHSCREEN_FTS
-    bool "Focaltech Touchscreen"
+config TOUCHSCREEN_FTS_0FLASH_MMI_V2
+    tristate "Focaltech 0flash MMI Touchscreen V2"
     default n
     help
-      Say Y here if you have Focaltech touch panel.
+      Say Y here if you have Focaltech 0flash  MMI V2 touch panel.
       If unsure, say N.
 
 config TOUCHSCREEN_FTS_DIRECTORY

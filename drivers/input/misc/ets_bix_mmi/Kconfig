@@ -1,0 +1,20 @@
+config INPUT_ETS_BIX_MMI
+	tristate "MMI ETS BIX fingerprint sensor"
+	default n
+	help
+	  Say Y here if you wish to include support for MMI ETS BIX fingerprint sensor.
+	  If unsure, say N.
+
+config EGIS_PANEL_NOTIFICATIONS
+	bool "MMI EGIS BIX fingerprint sensor DRM panel notifications"
+	depends on INPUT_ETS_BIX_MMI
+	default n
+	help
+	  Enable panel notifications for MMI ETS BIX fingerprint sensor.
+
+config EGIS_DRM_PANEL_NOTIFICATIONS
+	bool "MMI EGIS BIX fingerprint sensor DRM panel notifications"
+	depends on INPUT_ETS_BIX_MMI
+	default n
+	help
+	  Enable DRM panel notifications for MMI ETS BIX fingerprint sensor.
