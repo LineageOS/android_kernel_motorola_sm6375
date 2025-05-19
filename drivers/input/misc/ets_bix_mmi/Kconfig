@@ -1,0 +1,6 @@
+config INPUT_ETS_BIX_MMI
+	tristate "MMI ETS BIX fingerprint sensor"
+	default n
+	help
+	  Say Y here if you wish to include support for MMI ETS BIX fingerprint sensor.
+	  If unsure, say N.

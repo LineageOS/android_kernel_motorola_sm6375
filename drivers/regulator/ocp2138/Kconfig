@@ -1,0 +1,9 @@
+config REGULATOR_OCP2138
+	tristate "OCP2138 REGULATOR"
+	default n
+	help
+	  Say Y here if you have a OCP2138 compatible
+	  device connected.
+
+	  This driver can also be built as a module.  If so, the module
+	  will be called wl2868c.
