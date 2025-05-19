@@ -915,6 +915,7 @@ config INPUT_STPMIC1_ONKEY
 	  module will be called stpmic1_onkey.
 
 source "drivers/input/misc/chipone_fps_mmi/Kconfig"
+source "drivers/input/misc/ets_bix_mmi/Kconfig"
 source "drivers/input/misc/focal_fps_mmi/Kconfig"
 source "drivers/input/misc/fpc_fps_mmi/Kconfig"
 source "drivers/input/misc/goodix_fod_mmi/Kconfig"

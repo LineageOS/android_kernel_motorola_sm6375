@@ -2,15 +2,73 @@
 # Focaltech Touchscreen driver configuration
 #
 
-config TOUCHSCREEN_FTS
-    bool "Focaltech Touchscreen"
-    default n
-    help
-      Say Y here if you have Focaltech touch panel.
-      If unsure, say N.
+config TOUCHSCREEN_FTS_0FLASH_MMI_V2
+	tristate "Focaltech 0flash MMI Touchscreen V2"
+	default n
+	help
+	  Say Y here if you have Focaltech 0flash MMI V2 touch panel.
+	  If unsure, say N.
 
-config TOUCHSCREEN_FTS_DIRECTORY
-    string "Focaltech ts directory name"
-    default "focaltech_touch"
-    depends on TOUCHSCREEN_FTS
+config TOUCHSCREEN_FTS_0FLASH_MMI_V2_ENABLE_DOUBLE_TAP
+	bool "Enable double tap"
+	depends on TOUCHSCREEN_FTS_0FLASH_MMI_V2
+	default n
+	help
+	  Say Y here to enable double tap functionality on Focaltech 0flash MMI V2 touch panel.
+	  If unsure, say N.
 
+config TOUCHSCREEN_FTS_0FLASH_MMI_V2_NOTIFY_TOUCH_STATE
+	bool "Enable touch state"
+	depends on TOUCHSCREEN_FTS_0FLASH_MMI_V2
+	default n
+	help
+	  Say Y here to enable touch state reporting on Focaltech 0flash MMI V2 touch panel.
+	  If unsure, say N.
+
+config TOUCHSCREEN_FTS_0FLASH_MMI_V2_ESD_EN
+	bool "Enable ESD"
+	depends on TOUCHSCREEN_FTS_0FLASH_MMI_V2
+	default n
+	help
+	  Say Y here to enable ESD functionality on Focaltech 0flash MMI V2 touch panel.
+	  If unsure, say N.
+
+config TOUCHSCREEN_FTS_0FLASH_MMI_V2_PANEL_NOTIFICATIONS
+	bool "Enable panel notifications"
+	depends on TOUCHSCREEN_FTS_0FLASH_MMI_V2
+	default n
+	help
+	  Say Y here to enable panel notifications on Focaltech 0flash MMI V2 touch panel.
+	  If unsure, say N.
+
+config TOUCHSCREEN_FTS_0FLASH_MMI_V2_DEBUG_EN
+	bool "Enable debug"
+	depends on TOUCHSCREEN_FTS_0FLASH_MMI_V2
+	default n
+	help
+	  Say Y here to enable debug functionality on Focaltech 0flash MMI V2 touch panel.
+	  If unsure, say N.
+
+config TOUCHSCREEN_FTS_0FLASH_MMI_V2_IC_NAME_FT8057
+	bool "Enable FT8057 IC"
+	depends on TOUCHSCREEN_FTS_0FLASH_MMI_V2
+	default n
+	help
+	  Say Y here to enable FT8057 IC on Focaltech 0flash MMI V2 touch panel.
+	  If unsure, say N.
+
+config TOUCHSCREEN_FTS_0FLASH_MMI_V2_PINCTRL_EN
+	bool "Enable pin control"
+	depends on TOUCHSCREEN_FTS_0FLASH_MMI_V2
+	default n
+	help
+	  Say Y here to enable pin control functionality on Focaltech 0flash MMI V2 touch panel.
+	  If unsure, say N.
+
+config TOUCHSCREEN_FTS_0FLASH_MMI_V2_LAST_TIME
+	bool "Enable last time"
+	depends on TOUCHSCREEN_FTS_0FLASH_MMI_V2
+	default n
+	help
+	  Say Y here to enable last time functionality on Focaltech 0flash MMI V2 touch panel.
+	  If unsure, say N.
