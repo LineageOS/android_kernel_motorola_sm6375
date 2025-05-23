@@ -1,6 +1,6 @@
 subdir-ccflags-y += -Wall -Werror -DCONFIG_RT_REGMAP
 
-ccflags-y += -DCONFIG_PD_DBG_INFO
+#ccflags-y += -DCONFIG_PD_DBG_INFO
 
 ifneq ($(filter m y,$(CONFIG_TCPC_CLASS)),)
 	ccflags-y += -DCONFIG_TCPC_CLASS
