@@ -1,0 +1,8 @@
+config INPUT_SILEAD_FPS_MMI
+	tristate "MMI Silead fingerprint sensor"
+	default n
+	help
+	  Say Y here if you have an MMI Silead fingerprint sensor in your system.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called silead_fps_mmi.

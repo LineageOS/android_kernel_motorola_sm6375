@@ -1,0 +1,8 @@
+config SD77426_FG_MMI
+	tristate "SD77426 MMI fuel gauge"
+	default n
+	help
+	  Say Y here if you have an SD77426 MMI fuel gauge in your system.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called sd77426_fg_mmi.

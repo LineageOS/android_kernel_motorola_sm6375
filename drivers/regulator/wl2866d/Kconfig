@@ -1,0 +1,8 @@
+config REGULATOR_WL2866D
+	tristate "WL2866D REGULATOR"
+	default n
+	help
+	  Say Y here if you have an Wl2866d regulartor in your system.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called wl2866d.
