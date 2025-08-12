@@ -542,6 +542,7 @@ source "drivers/misc/habanalabs/Kconfig"
 source "drivers/misc/awinic/Kconfig"
 source "drivers/misc/ldo_vibrator_mmi/Kconfig"
 source "drivers/misc/mmi_sys_temp/Kconfig"
+source "drivers/misc/pen/Kconfig"
 source "drivers/misc/sx937x/Kconfig"
 source "drivers/misc/utag/Kconfig"
 endmenu

@@ -919,5 +919,6 @@ source "drivers/input/misc/fpc_fps_mmi/Kconfig"
 source "drivers/input/misc/goodix_fod_mmi/Kconfig"
 source "drivers/input/misc/rbs_fod_mmi/Kconfig"
 source "drivers/input/misc/rbs_fps_mmi/Kconfig"
+source "drivers/input/misc/silead_fps_mmi/Kconfig"
 
 endif
