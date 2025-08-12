@@ -1,0 +1,8 @@
+config MISC_BU520XX_PEN
+	tristate "Rohm BU520xx Pen Driver"
+	default n
+	help
+	  Say Y here if you have an Rohm BU520xx pen in your system.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called bu520xx_pen.
