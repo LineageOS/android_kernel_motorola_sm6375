@@ -4815,7 +4815,11 @@ static int qpnp_qg_probe(struct platform_device *pdev)
 	chip->sys_soc = INT_MIN;
 	chip->full_soc = QG_SOC_FULL;
 	chip->chg_iterm_ma = INT_MIN;
+#ifdef CONFIG_DENVER_DTB
+	chip->soh = -EINVAL;
+#else
 	chip->soh = 100;
+#endif
 	chip->esr_actual = -EINVAL;
 	chip->esr_nominal = -EINVAL;
 	chip->batt_age_level = -EINVAL;
