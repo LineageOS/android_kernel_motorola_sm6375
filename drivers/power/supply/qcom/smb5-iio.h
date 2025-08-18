@@ -33,7 +33,9 @@ enum qg_chg_iio_channels {
 	SMB5_QG_CYCLE_COUNT,
 	SMB5_QG_CHARGE_FULL_DESIGN,
 	SMB5_QG_TIME_TO_FULL_NOW,
+#ifndef CONFIG_DENVER_DTB
 	SMB5_QG_SOH,
+#endif
 };
 
 enum mmi_cp_iio_channels {
