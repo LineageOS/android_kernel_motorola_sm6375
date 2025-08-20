@@ -41,6 +41,9 @@
 #define pen_info(fmt, args...)  printk(fmt, ##args)
 
 #define DRIVER_NAME "pen_detect"
+#define KEY_PEN_REMOVED   0x259
+#define KEY_PEN_INSERTED  0x25a
+
 static struct workqueue_struct *hall_sensor_wq;
 static struct workqueue_struct *hall_sensor_do_wq;
 static struct kobject *hall_sensor_kobj;
@@ -239,6 +242,8 @@ static int pen_input_device_create(void)
 	hall_sensor_dev->pen_indev->phys= "/dev/input/pen_detect";
 	hall_sensor_dev->pen_indev->dev.parent= NULL;
 	input_set_capability(hall_sensor_dev->pen_indev, EV_SW, SW_PEN_INSERTED);
+	input_set_capability(hall_sensor_dev->pen_indev, EV_KEY, KEY_PEN_REMOVED);
+	input_set_capability(hall_sensor_dev->pen_indev, EV_KEY, KEY_PEN_INSERTED);
 
 	err = input_register_device(hall_sensor_dev->pen_indev);
 	if (err) {
@@ -326,6 +331,13 @@ static void pen_report_function(struct work_struct *dat)
 		return;
 	}
 	input_report_switch(hall_sensor_dev->pen_indev, SW_PEN_INSERTED, !hall_sensor_dev->status);
+	if (hall_sensor_dev->status) {
+		input_report_key(hall_sensor_dev->pen_indev, KEY_PEN_REMOVED, 1);
+		input_report_key(hall_sensor_dev->pen_indev, KEY_PEN_REMOVED, 0);
+	} else {
+		input_report_key(hall_sensor_dev->pen_indev, KEY_PEN_INSERTED, 1);
+		input_report_key(hall_sensor_dev->pen_indev, KEY_PEN_INSERTED, 0);
+	}
 	input_sync(hall_sensor_dev->pen_indev);
 #ifdef CONFIG_HAS_WAKELOCK
 	wake_unlock(&hall_sensor_dev->wake_lock);
