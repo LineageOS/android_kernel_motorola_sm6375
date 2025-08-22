@@ -22,6 +22,30 @@
       },
       "revId": "c26ccdc5894af4cff3d1c32f14bf18c697ef1f8d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aeeb413a_11a24508",
+        "filename": "drivers/input/touchscreen/nova_0flash_mmi/nt36xxx.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 3288,
+      "author": {
+        "id": 29242
+      },
+      "writtenOn": "2025-08-22T16:01:58Z",
+      "side": 1,
+      "message": "I had done so in patchset 1. Should I bring that back?",
+      "parentUuid": "795f12ba_93a33d78",
+      "range": {
+        "startLine": 3288,
+        "startChar": 1,
+        "endLine": 3288,
+        "endChar": 19
+      },
+      "revId": "c26ccdc5894af4cff3d1c32f14bf18c697ef1f8d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
