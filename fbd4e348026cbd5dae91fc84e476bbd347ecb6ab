@@ -221,6 +221,30 @@
       },
       "revId": "fbd4e348026cbd5dae91fc84e476bbd347ecb6ab",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e8257c3_0bf22d33",
+        "filename": "drivers/regulator/wl2866d/Kconfig",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-08-22T14:59:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cf3c443e_fb5b8bbb",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 8
+      },
+      "revId": "fbd4e348026cbd5dae91fc84e476bbd347ecb6ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
