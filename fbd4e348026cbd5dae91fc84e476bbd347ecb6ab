@@ -129,6 +129,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ccbffef9_6b8039a9",
+        "filename": "drivers/power/rt9426a_fg_mmi/Kconfig",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-08-22T14:58:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "139c9f68_5877c610",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 8
+      },
+      "revId": "fbd4e348026cbd5dae91fc84e476bbd347ecb6ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "934cb3ac_350e681c",
@@ -142,6 +166,30 @@
       "writtenOn": "2025-08-22T13:46:36Z",
       "side": 1,
       "message": "Spaces -\u003e tab here and below",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 8
+      },
+      "revId": "fbd4e348026cbd5dae91fc84e476bbd347ecb6ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "526c5de8_a29521af",
+        "filename": "drivers/power/sd77426_fg_mmi/Kconfig",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-08-22T14:58:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "934cb3ac_350e681c",
       "range": {
         "startLine": 2,
         "startChar": 0,
