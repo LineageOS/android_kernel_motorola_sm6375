@@ -46,6 +46,30 @@
       },
       "revId": "c26ccdc5894af4cff3d1c32f14bf18c697ef1f8d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "75a61d2a_a448c8ef",
+        "filename": "drivers/input/touchscreen/nova_0flash_mmi/nt36xxx.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 3288,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-08-22T16:08:42Z",
+      "side": 1,
+      "message": "Yeah, either queue_work or some delay !\u003d 0, using 0 delay with delayed doesn\u0027t make much sense",
+      "parentUuid": "aeeb413a_11a24508",
+      "range": {
+        "startLine": 3288,
+        "startChar": 1,
+        "endLine": 3288,
+        "endChar": 19
+      },
+      "revId": "c26ccdc5894af4cff3d1c32f14bf18c697ef1f8d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
