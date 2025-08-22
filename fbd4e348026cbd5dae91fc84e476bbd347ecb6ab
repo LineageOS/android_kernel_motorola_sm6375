@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "016048ea_db6617f4",
+        "filename": "drivers/misc/Kconfig",
+        "patchSetId": 5
+      },
+      "lineNbr": 547,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-08-22T14:56:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4b2875c9_85e44666",
+      "revId": "fbd4e348026cbd5dae91fc84e476bbd347ecb6ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "78ece1fe_bc0696f4",
@@ -35,6 +53,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd583b83_a8772db8",
+        "filename": "drivers/misc/Makefile",
+        "patchSetId": 5
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-08-22T14:56:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "78ece1fe_bc0696f4",
+      "revId": "fbd4e348026cbd5dae91fc84e476bbd347ecb6ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "273c4c67_23f37835",
@@ -48,6 +84,24 @@
       "writtenOn": "2025-08-22T13:46:36Z",
       "side": 1,
       "message": "Sort alphabetically like the Kconfig",
+      "revId": "fbd4e348026cbd5dae91fc84e476bbd347ecb6ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74253bc8_b941c1f2",
+        "filename": "drivers/power/Makefile",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-08-22T14:56:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "273c4c67_23f37835",
       "revId": "fbd4e348026cbd5dae91fc84e476bbd347ecb6ab",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
