@@ -1,0 +1,14 @@
+config INPUT_CHIPONE_FPS_MMI
+	tristate "MMI Chipone fingerprint sensor"
+	default n
+	help
+	  Say Y here if you wish to include support for MMI Chipone fingerprint sensor.
+	  If unsure, say N.
+
+config INPUT_CHIPONE_FPS_MMI_SUPPORT_POWER_GPIO
+	bool "Power GPIO support for MMI Chipone fingerprint sensor"
+	default n
+	depends on INPUT_CHIPONE_FPS_MMI
+	help
+	  Say Y here if you wish to include power gpio support for MMI Chipone fingerprint sensor.
+	  If unsure, say N.
