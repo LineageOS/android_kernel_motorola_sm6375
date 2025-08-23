@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "88681782_8ce8fe82",
+        "filename": "arch/arm64/Kconfig",
+        "patchSetId": 2
+      },
+      "lineNbr": 1990,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-08-23T06:08:44Z",
+      "side": 1,
+      "message": "Won\u0027t this break existing devices? Or it\u0027s needed for all devices?",
+      "revId": "15d9db4418a5e1ab18c1701c4711e2df8dbad8db",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
