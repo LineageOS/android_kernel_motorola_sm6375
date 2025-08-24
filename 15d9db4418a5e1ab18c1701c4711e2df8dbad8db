@@ -16,6 +16,24 @@
       "message": "Won\u0027t this break existing devices? Or it\u0027s needed for all devices?",
       "revId": "15d9db4418a5e1ab18c1701c4711e2df8dbad8db",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d36dd97e_d6acfce2",
+        "filename": "arch/arm64/Kconfig",
+        "patchSetId": 2
+      },
+      "lineNbr": 1990,
+      "author": {
+        "id": 26672
+      },
+      "writtenOn": "2025-08-24T14:01:47Z",
+      "side": 1,
+      "message": "seems like all other devices are fine without this change. only denver is affected. so making it default y and disabling only for denver. denver is the only device stuck with old blobs ig.",
+      "parentUuid": "88681782_8ce8fe82",
+      "revId": "15d9db4418a5e1ab18c1701c4711e2df8dbad8db",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
