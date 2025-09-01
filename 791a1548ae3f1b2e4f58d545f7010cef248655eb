@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7f5b4f7a_d6ca0e70",
+        "filename": "arch/arm64/configs/vendor/ext_config/moto-holi-denver.config",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-09-01T00:49:35Z",
+      "side": 1,
+      "message": "This config doesn\u0027t exist",
+      "revId": "791a1548ae3f1b2e4f58d545f7010cef248655eb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
