@@ -915,7 +915,7 @@ static const char * const smblib_qg_ext_iio_chan[] = {
 	[SMB5_QG_CYCLE_COUNT] = "cycle_count",
 	[SMB5_QG_CHARGE_FULL_DESIGN] = "charge_full_design",
 	[SMB5_QG_TIME_TO_FULL_NOW] = "time_to_full_now",
-#ifndef CONFIG_DENVER_DTB
+#ifndef CONFIG_QG_LEGACY
 	[SMB5_QG_SOH] = "soh",
 #endif
 };
