@@ -7,3 +7,11 @@ config MMI_SMBCHARGER_IIO
 
 	  This driver can also be built as a module.  If so, the module
 	  will be called mmi-smbcharger-iio.
+
+config QG_LEGACY
+	bool "Legacy behavior for QG fuel gauge (disable SOH)"
+	depends on MMI_SMBCHARGER_IIO
+	default n
+	help
+	  Says Y if you want to disable QG SOH channel and use legacy
+	  battery detection path.
