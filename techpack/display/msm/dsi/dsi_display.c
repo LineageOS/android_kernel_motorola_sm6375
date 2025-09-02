@@ -9203,7 +9203,6 @@ int dsi_display_enable(struct dsi_display *display)
 			       display->name, rc);
 			goto error;
 		}
-		dsi_panel_reset_param(display->panel);
 
 		if (display->panel->dfps_caps.dfps_send_cmd_support) {
 			display->panel->dfps_caps.current_fps = display->panel->dfps_caps.panel_on_fps;
@@ -9228,6 +9227,7 @@ int dsi_display_enable(struct dsi_display *display)
 				goto error;
 			}
 		}
+		dsi_panel_reset_param(display->panel);
 	}
 
 	if (mode->dsi_mode_flags & DSI_MODE_FLAG_DMS) {
