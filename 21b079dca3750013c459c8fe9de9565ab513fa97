@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a1d57462_803a66cf",
+        "filename": "arch/arm64/configs/vendor/ext_config/moto-holi-denver.config",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-09-02T05:55:11Z",
+      "side": 1,
+      "message": "Move it to Charger section for all devices",
+      "revId": "21b079dca3750013c459c8fe9de9565ab513fa97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
