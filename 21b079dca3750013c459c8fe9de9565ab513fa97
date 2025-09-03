@@ -34,6 +34,24 @@
       "parentUuid": "a1d57462_803a66cf",
       "revId": "21b079dca3750013c459c8fe9de9565ab513fa97",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "14099503_140c49ca",
+        "filename": "arch/arm64/configs/vendor/ext_config/moto-holi-denver.config",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-09-03T15:26:36Z",
+      "side": 1,
+      "message": "No, since it\u0027s `default n`",
+      "parentUuid": "6e2fe4b8_bec3e260",
+      "revId": "21b079dca3750013c459c8fe9de9565ab513fa97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
