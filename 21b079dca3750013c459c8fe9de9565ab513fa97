@@ -16,6 +16,24 @@
       "message": "Move it to Charger section for all devices",
       "revId": "21b079dca3750013c459c8fe9de9565ab513fa97",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6e2fe4b8_bec3e260",
+        "filename": "arch/arm64/configs/vendor/ext_config/moto-holi-denver.config",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 27312
+      },
+      "writtenOn": "2025-09-03T14:19:34Z",
+      "side": 1,
+      "message": "\u003e Move it to Charger section for all devices\nIs it necessary to add  `CONFIG_QG_LEGACY is not set`  for devices that don\u0027t use this?",
+      "parentUuid": "a1d57462_803a66cf",
+      "revId": "21b079dca3750013c459c8fe9de9565ab513fa97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
