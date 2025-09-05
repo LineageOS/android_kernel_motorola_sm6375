@@ -2706,7 +2706,7 @@ static void nvt_gesture_state_switch(void)
 static ssize_t gesture_show(struct device *dev,
                 struct device_attribute *attr, char *buf)
 {
-        return scnprintf(buf, PAGE_SIZE, "%u\n", ts->d_tap_flag);
+        return scnprintf(buf, PAGE_SIZE, "%u\n", ts->s_tap_flag);
 }
 
 static ssize_t gesture_store(struct device *dev,
@@ -2724,9 +2724,9 @@ static ssize_t gesture_store(struct device *dev,
 
         switch (value) {
                 case 1:
-                        nvt_cmd_ext_store(0x7B,0x04);
-                        ts->s_tap_flag = false;
-                        ts->d_tap_flag = true;
+                        nvt_cmd_ext_store(0x7B,0x02);
+                        ts->s_tap_flag = true;
+                        ts->d_tap_flag = false;
                         break;
                 default:
                         nvt_cmd_ext_store(0x7B,0x01);
