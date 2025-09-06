@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a6cc99d_f125737c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27312
+      },
+      "writtenOn": "2025-09-06T02:10:56Z",
+      "side": 1,
+      "message": "with CONFIG_TOUCHSCREEN_FTS_0FLASH_MMI_V2_LAST_TIME enable, touchscreen don\u0027t works",
+      "revId": "338ccc28db1c1111e54770a073f011b58b8d8b06",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
