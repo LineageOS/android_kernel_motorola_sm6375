@@ -22,6 +22,30 @@
       },
       "revId": "ebc27fdae56cc0dec29b3e0e426942a370113e98",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2c56adb1_15d9aa27",
+        "filename": "drivers/power/mmi_discrete_turbo_charger/mmi_charger_core.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 1110,
+      "author": {
+        "id": 20370
+      },
+      "writtenOn": "2025-09-07T20:59:58Z",
+      "side": 1,
+      "message": "I am not familiar with such internals so I disabled the log messages I consider spam ;)\nWhen using mmi_chrg_dbg a parameter needs to be added from enum print_reason.\nWhich of them is the correct one here: PR_INTERRUPT or PR_MOTO?",
+      "parentUuid": "84196c94_0c45e4f0",
+      "range": {
+        "startLine": 1110,
+        "startChar": 4,
+        "endLine": 1110,
+        "endChar": 17
+      },
+      "revId": "ebc27fdae56cc0dec29b3e0e426942a370113e98",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
