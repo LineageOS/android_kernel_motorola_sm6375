@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a7808f9_869a4722",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-09-07T17:26:31Z",
+      "side": 1,
+      "message": "This is covered by https://review.lineageos.org/c/LineageOS/android_kernel_motorola_sm6375/+/432824",
+      "revId": "5190b5d007e7b4a50cf2de141c50f590595380d1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
