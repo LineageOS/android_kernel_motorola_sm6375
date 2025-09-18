@@ -46,6 +46,30 @@
       },
       "revId": "ebc27fdae56cc0dec29b3e0e426942a370113e98",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b768ed67_bcde6314",
+        "filename": "drivers/power/mmi_discrete_turbo_charger/mmi_charger_core.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 1110,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-09-18T14:39:34Z",
+      "side": 1,
+      "message": "Maybe PR_MISC is a better option?",
+      "parentUuid": "2c56adb1_15d9aa27",
+      "range": {
+        "startLine": 1110,
+        "startChar": 4,
+        "endLine": 1110,
+        "endChar": 17
+      },
+      "revId": "ebc27fdae56cc0dec29b3e0e426942a370113e98",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
