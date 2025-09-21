@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b7f2102_989d638c",
+        "filename": "arch/arm64/configs/vendor/ext_config/moto-holi-bangkk.config",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 27312
+      },
+      "writtenOn": "2025-09-21T04:58:48Z",
+      "side": 0,
+      "message": "aw87xxx_dlkm.ko is a module that bangkk uses\n\nERROR: aw87xxx_dlkm.ko was not found in the kernel modules intermediates dir, module load list must be corrected",
+      "revId": "caaec16800334341452d81d79aa4a0325fb3f62c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
