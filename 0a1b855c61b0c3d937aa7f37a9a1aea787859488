@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea4533ca_16d636a3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-01-08T15:09:27Z",
+      "side": 1,
+      "message": "I don\u0027t like this, but I haven\u0027t managed to get anyone to send me logs or debug this issue properly. We\u0027ll have to live with broken thermal throttling for now.",
+      "revId": "0a1b855c61b0c3d937aa7f37a9a1aea787859488",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
