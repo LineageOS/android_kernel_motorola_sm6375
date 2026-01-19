@@ -16,6 +16,23 @@
       "message": "+1 for rhodep",
       "revId": "56e674afcf34da7d443459daa0ffcf83193d0989",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "69d7cea7_7f52d3ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-01-19T20:55:04Z",
+      "side": 1,
+      "message": "For context, this is used in qpnp_adaptive_charge.ko and I checked against all stock dumps to see which devices enabled the flag",
+      "revId": "56e674afcf34da7d443459daa0ffcf83193d0989",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
