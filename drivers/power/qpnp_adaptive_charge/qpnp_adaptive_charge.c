@@ -67,6 +67,7 @@ static struct adap_chg_data {
 	struct delayed_work	reinit_work;
 } adap_chg_data;
 
+int charging_enabled = 1;
 int upper_limit = -1;
 int lower_limit = -1;
 int blocking = 0;
@@ -145,17 +146,23 @@ static void stop_charging(bool on)
 
 static void update(struct adap_chg_data *data)
 {
-	data->batt_capacity = get_ps_int_prop(data->batt_psy,
-		POWER_SUPPLY_PROP_CAPACITY);
-	if (data->batt_capacity < 0) {
-		pr_err("Failed to get battery capacity\n");
+	if (!charging_enabled) {
+		suspend_charging(false);
+		stop_charging(true);
 		return;
 	}
 
-	pr_info("Batt cap is %d, upper limit is %d, lower limit is %d\n",
-		data->batt_capacity, upper_limit, lower_limit);
-
 	if (upper_limit != -1) {
+		data->batt_capacity = get_ps_int_prop(data->batt_psy,
+			POWER_SUPPLY_PROP_CAPACITY);
+		if (data->batt_capacity < 0) {
+			pr_err("Failed to get battery capacity\n");
+			return;
+		}
+
+		pr_info("Batt cap is %d, upper limit is %d, lower limit is %d\n",
+			data->batt_capacity, upper_limit, lower_limit);
+
 		/* If no lower limit is defined, we are in Auto Mode */
 		if (lower_limit == -1) {
 #ifdef ADAPTIVE_TOLERANCE_OPTIMIZATION
@@ -203,6 +210,29 @@ static void update_work(struct work_struct *w)
 
 	if (batt_capacity != data->batt_capacity)
 		update(data);
+}
+
+static int set_charging_enabled(const char *val, const struct kernel_param *kp)
+{
+	int rc;
+	long new_state;
+
+	if (!adap_chg_data.init_success)
+		return -ENODEV;
+
+	rc = kstrtol(val, 0, &new_state);
+	if (rc)
+		return rc;
+
+	if (new_state != 0 && new_state != 1)
+		return -EINVAL;
+
+	charging_enabled = (int)new_state;
+
+	pr_info("charging_enabled set to %d\n", charging_enabled);
+	update(&adap_chg_data);
+
+	return 0;
 }
 
 static int set_upper_limit(const char *val, const struct kernel_param *kp)
@@ -304,6 +334,12 @@ static int ps_notify_callback(struct notifier_block *nb,
 	return 0;
 }
 
+static struct kernel_param_ops charging_enabled_ops =
+{
+	.set = &set_charging_enabled,
+	.get = param_get_int,
+};
+
 static struct kernel_param_ops upper_limit_ops =
 {
 	.set = &set_upper_limit,
@@ -321,6 +357,12 @@ static struct kernel_param_ops blocking_ops =
 	.set = &set_blocking,
 	.get = &get_blocking,
 };
+
+module_param_cb(charging_enabled,
+    &charging_enabled_ops,
+    &charging_enabled,
+    S_IRUGO | S_IWUSR
+);
 
 module_param_cb(upper_limit,
     &upper_limit_ops,
