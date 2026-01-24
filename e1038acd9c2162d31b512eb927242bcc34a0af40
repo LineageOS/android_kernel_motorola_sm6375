@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01f00b3f_296587f7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26672
+      },
+      "writtenOn": "2026-01-24T03:10:06Z",
+      "side": 1,
+      "message": "fine on denver",
+      "revId": "e1038acd9c2162d31b512eb927242bcc34a0af40",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
