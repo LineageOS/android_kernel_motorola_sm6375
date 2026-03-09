@@ -61,7 +61,7 @@
 			   "cycle_count",
 			   "charge_full_design",
 			   "time_to_full_now",
-			   "soh"
+			   "soh",
 			   "cp_input_voltage_now";
 	qcom,fcc-max-ua = <3000000>;
 	qcom,fv-max-uv = <4480000>;
