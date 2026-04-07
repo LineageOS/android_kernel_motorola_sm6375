@@ -34,6 +34,24 @@
       "parentUuid": "6557558b_65b7d16f",
       "revId": "fc5dfe8ed66dbce4fc7719d13e0fb2fba407508d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4678af5a_a9b720a7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-04-07T14:02:27Z",
+      "side": 1,
+      "message": "The bugs in the original code should be fixed instead of introducing duplicate sysfs nodes",
+      "parentUuid": "2f8be54b_8aed8983",
+      "revId": "fc5dfe8ed66dbce4fc7719d13e0fb2fba407508d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
