@@ -16,6 +16,24 @@
       "message": "hbm and dc sysfs are already exposed in this kernel",
       "revId": "fc5dfe8ed66dbce4fc7719d13e0fb2fba407508d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f8be54b_8aed8983",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34240
+      },
+      "writtenOn": "2026-04-07T07:03:02Z",
+      "side": 1,
+      "message": "That caused these bugs:\nhttps://gitlab.com/LineageOS/issues/android/-/work_items/10011\nhttps://gitlab.com/LineageOS/issues/android/-/work_items/9956\n\nThis one fixes it.",
+      "parentUuid": "6557558b_65b7d16f",
+      "revId": "fc5dfe8ed66dbce4fc7719d13e0fb2fba407508d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
