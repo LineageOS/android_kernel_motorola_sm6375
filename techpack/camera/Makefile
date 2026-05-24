@@ -94,6 +94,11 @@ endif
 
 endif
 
+ifeq ($(CONFIG_IBIZA_DTB), y)
+LINUXINCLUDE    += \
+		-include $(srctree)/techpack/camera/config/legacycameraconf.h
+endif
+
 ifneq (,$(filter $(CONFIG_SPECTRA_CAMERA), y m))
 # Use USERINCLUDE when you must reference the UAPI directories only.
 USERINCLUDE     += \
