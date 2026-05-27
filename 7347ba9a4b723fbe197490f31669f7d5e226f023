@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de6b7579_23777c9d",
+        "filename": "arch/arm64/configs/vendor/ext_config/moto-holi-ibiza.config",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-05-27T23:44:33Z",
+      "side": 1,
+      "message": "Were all the touch configs derived from stock module symbols?",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 61,
+        "endChar": 37
+      },
+      "revId": "7347ba9a4b723fbe197490f31669f7d5e226f023",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
