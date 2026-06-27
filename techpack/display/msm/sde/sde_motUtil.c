@@ -469,6 +469,7 @@ static ssize_t dsi_display_mot_kmsprop_store(struct device *dev,
 {
 	struct mot_kmsprop_attribute *kmsprop_attr =
 		container_of(attr, struct mot_kmsprop_attribute, attr);
+	struct dsi_display *display = dev_get_drvdata(dev);
 	char input[] = { MOTUTIL_KMS_PROP_TEST, MOTUTIL_MAIN_DISP,
 			 KMSPROPTEST_SETPROP, kmsprop_attr->conn_type, 0 };
 	int rc, val;
@@ -480,6 +481,15 @@ static ssize_t dsi_display_mot_kmsprop_store(struct device *dev,
 
 	mutex_lock(&motUtil_data.lock);
 	rc = _sde_sysfs_motUtil_kms_prop_test(dev, ARRAY_SIZE(input), input);
+
+        if (!rc &&
+            kmsprop_attr->param_idx == PARAM_HBM_ID &&
+            display && display->panel) {
+
+                display->panel->hbm_enabled =
+                        (val == HBM_ON_STATE);
+        }
+
 	mutex_unlock(&motUtil_data.lock);
 
 	if (rc < 0)

@@ -6216,6 +6216,36 @@ int dsi_panel_post_enable(struct dsi_panel *panel)
 			       panel->name, rc);
 		}
 	}
+
+	/*
+	* Some panels lose backlight state after panel power collapse
+	* while HBM is active.
+	*
+	* Re-trigger HBM state after panel enable to restore
+	* proper brightness programming.
+	*/
+	if (panel->hbm_enabled) {
+		struct msm_param_info param_info;
+
+		mutex_unlock(&panel->panel_lock);
+
+		param_info.param_idx = PARAM_HBM_ID;
+
+		/* force panel state reset */
+		param_info.value = HBM_OFF_STATE;
+		dsi_panel_set_param(panel, &param_info);
+
+		usleep_range(17000, 17100);
+
+		/* restore HBM */
+		param_info.value = HBM_ON_STATE;
+		rc = dsi_panel_set_param(panel, &param_info);
+
+		mutex_lock(&panel->panel_lock);
+
+		if (rc)
+		       goto error;
+	}
 error:
 	mutex_unlock(&panel->panel_lock);
 	return rc;
