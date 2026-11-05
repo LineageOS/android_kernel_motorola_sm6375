@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b8315842_6d3e15e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-05T20:33:47Z",
+      "side": 1,
+      "message": "Isn\u0027t this merge already outdated?\n\nI merged this chain: https://review.lineageos.org/c/LineageOS/android_kernel_qcom_sm8350/+/512219",
+      "revId": "47df812d0b0775413e12dc5ef010287ffdef7e0a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
