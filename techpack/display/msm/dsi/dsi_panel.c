@@ -1295,6 +1295,13 @@ static int dsi_panel_set_hbm(struct dsi_panel *panel,
 		if (gpio_is_valid(panel->hbm_en_gpio)) {
 			struct panel_param *panel_param = &dsi_panel_param[0][PARAM_HBM_ID];
 
+			mutex_lock(&panel->panel_lock);
+			if (!panel->panel_initialized ||
+			    panel_param->value == param_info->value) {
+				mutex_unlock(&panel->panel_lock);
+				return rc;
+			}
+
 			panel_param->value = param_info->value;
 			if (param_info->value) {
 				gpio_direction_output(panel->hbm_en_gpio, 1);
@@ -1308,6 +1315,7 @@ static int dsi_panel_set_hbm(struct dsi_panel *panel,
 			rc = dsi_panel_set_backlight(panel, HBM_BRIGHTNESS(param_info->value));
 			if (rc)
 				DSI_ERR("Set HBM: unable to set backlight\n");
+			mutex_unlock(&panel->panel_lock);
 
 		} else {
 			DSI_ERR("%s: invalid params\n", __func__);
@@ -1324,20 +1332,29 @@ static int dsi_panel_set_hbm(struct dsi_panel *panel,
 		rc = dsi_panel_send_param_cmd(panel, param_info);
 		if (rc < 0) {
 			DSI_ERR("%s: failed to send param cmds. ret=%d\n", __func__, rc);
-		} else {
+		} else if (rc > 0) {
 			if(lhbm_config->enable) {
-				bl_lvl = lhbm_config->dbv_level;
 				if (lhbm_config->resend_lbhm_off && param_info->value == HBM_OFF_STATE) {
 					usleep_range(5000, 5010);
 					rc = dsi_panel_send_param_cmd(panel, param_info);
 					if (rc < 0)
 						DSI_ERR("%s: failed to resend param cmds. ret=%d\n", __func__, rc);
 				}
-			} else
+			}
+
+			mutex_lock(&panel->panel_lock);
+			if (!panel->panel_initialized) {
+				mutex_unlock(&panel->panel_lock);
+				return 0;
+			}
+			if (lhbm_config->enable)
+				bl_lvl = lhbm_config->dbv_level;
+			else
 				bl_lvl = HBM_BRIGHTNESS(param_info->value);
 			rc = dsi_panel_set_backlight(panel, bl_lvl);
 			if (rc)
 				DSI_ERR("unable to set backlight\n");
+			mutex_unlock(&panel->panel_lock);
 		}
 	}
 
