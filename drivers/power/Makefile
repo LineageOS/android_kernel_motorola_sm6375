@@ -12,6 +12,7 @@ obj-$(CONFIG_MMI_CHARGER)	+= mmi_charger/
 obj-$(CONFIG_MMI_DISCRETE_CHARGER)	+= mmi_discrete_charger/
 obj-$(CONFIG_MMI_DISCRETE_TURBO_CHARGER)	+= mmi_discrete_turbo_charger/
 obj-$(CONFIG_MMI_PARALLEL_CHARGER_IIO)	+= mmi_parallel_charger_iio/
+obj-$(CONFIG_MMI_SC8549)	+= mmi_sc8549/
 obj-$(CONFIG_MMI_SMBCHARGER_IIO)	+= mmi-smbcharger-iio/
 obj-$(CONFIG_MMI_MM8013C_FG)	+= mm8013c_fg_mmi/
 obj-$(CONFIG_QPNP_ADAPTIVE_CHARGE)	+= qpnp_adaptive_charge/

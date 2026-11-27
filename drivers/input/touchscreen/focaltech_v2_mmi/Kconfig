@@ -2,16 +2,21 @@
 # Focaltech Touchscreen driver configuration
 #
 
-config TOUCHSCREEN_FTS
-    bool "Focaltech Touchscreen"
-    depends on I2C
-    default n
-    help
-      Say Y here if you have Focaltech touch panel.
-      If unsure, say N.
+config TOUCHSCREEN_FOCALTECH_V2_MMI
+	tristate "Focaltech V2 MMI Touchscreen"
+	depends on I2C
+	default n
+	help
+	  Say Y here if you have Focaltech V2 MMI touch panel.
+	  If unsure, say N.
 
-config TOUCHSCREEN_FTS_DIRECTORY
-    string "Focaltech ts directory name"
-    default "focaltech_touch"
-    depends on TOUCHSCREEN_FTS
+	  To compile this driver as a module, choose M here: the
+	  module will be called focaltech_v2_mmi.
 
+config INPUT_FOCALTECH_MMI_ENABLE_DOUBLE_TAP
+	bool "Enable double tap"
+	depends on TOUCHSCREEN_FOCALTECH_V2_MMI
+	default n
+	help
+	  Say Y here to enable double tap functionality on Focaltech V2 MMI touch panel.
+	  If unsure, say N.

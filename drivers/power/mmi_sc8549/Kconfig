@@ -1,0 +1,9 @@
+config MMI_SC8549
+	tristate "Southchip SC8549 charge pump driver"
+	depends on I2C
+	default n
+	help
+	  Say Y here to enable Southchip SC8549 charge pump driver.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called mmi_sc8549.
